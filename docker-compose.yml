@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    image: smsdigital/sms-app-sso-test:latest
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DEBUG: sms-app-sso-test
+      PRIVATE_KEY: I2D6BWycz+bNWkcS1ul820uK5Jx1qGvsRfilDy09o94=
+      SSO_API: https://api.my.sms-group.com
+      SSO_PUBLIC_KEY: k9Q8DSuQWBM84G4gd1nbp0SJ9y3iW2veGnHjDojK5GY=
+      SSO_NAME: sms-app-sso-test

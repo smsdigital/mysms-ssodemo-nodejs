@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+      "object-literal-sort-keys": false,
+      "max-classes-per-file": false,
+      "ordered-imports": false,
+      "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+      "no-conditional-assignment": false,
+      "no-shadowed-variable": false
+    },
+    "rulesDirectory": []
+}
